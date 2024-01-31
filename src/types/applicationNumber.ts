@@ -3,8 +3,8 @@ import { ComputeRange } from "../utils/computeRange";
 
 type ApplicationTypeCodes = "AB" | "CD" | "EF" | "GH" | "IJ" | "KL" | "MN" | "OP" | "QR" | "ST" | "UV" | "WX" | "YZ";
 
-type YearEnding = `${ComputeRange<6>[number]}`
+type ApplicationYearEnding = `${ComputeRange<6>[number]}`
 
-type Year = `202${YearEnding}`
+type ApplicationYear = `202${ApplicationYearEnding}`
 
-export type ApplicationNumber = `${ApplicationTypeCodes}${number}/${Year}`
+export type ApplicationNumber = `${ApplicationTypeCodes}${number}/${ApplicationYear}`
